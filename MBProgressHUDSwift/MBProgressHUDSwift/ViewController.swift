@@ -49,8 +49,10 @@ class ViewController: UIViewController {
     
     @IBAction func showMessageToView(_ sender: Any) {
         
-        let hud = MBProgressHUD.showMessage(message: "添加信息", view: self.view)
-        hud.hide(animated: true, afterDelay: 2.0)
+//        let hud = MBProgressHUD.showMessage(message: "添加信息", view: self.view)
+//        hud.hide(animated: true, afterDelay: 2.0)
+        
+        MBProgressHUD.showHUD()
 
     }
     

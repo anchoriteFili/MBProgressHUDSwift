@@ -125,7 +125,6 @@
 				D6FFFB231FE25BEB00D1CA2E /* MBProgressHUD */,
 				D67EFF4B1FE20EA50020DD77 /* AppDelegate.swift */,
 				D67EFF4D1FE20EA50020DD77 /* ViewController.swift */,
-				D6FFFA301FE23E5F00D1CA2E /* MBProgressHUDSwift.swift */,
 				D67EFF4F1FE20EA50020DD77 /* Main.storyboard */,
 				D67EFF521FE20EA50020DD77 /* Assets.xcassets */,
 				D67EFF541FE20EA50020DD77 /* LaunchScreen.storyboard */,
@@ -158,6 +157,7 @@
 			children = (
 				D6FFFB261FE25BEB00D1CA2E /* MBProgressHUD.h */,
 				D6FFFB241FE25BEB00D1CA2E /* MBProgressHUD.m */,
+				D6FFFA301FE23E5F00D1CA2E /* MBProgressHUDSwift.swift */,
 				D6FFFB271FE25BEB00D1CA2E /* README.mdown */,
 				D6FFFB251FE25BEB00D1CA2E /* LICENSE */,
 			);
