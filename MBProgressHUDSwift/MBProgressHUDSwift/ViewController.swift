@@ -31,7 +31,6 @@ class ViewController: UIViewController {
     @IBAction func showError(_ sender: Any) {
         
         MBProgressHUD.showError(error: "加载失败")
-        
     }
     
     

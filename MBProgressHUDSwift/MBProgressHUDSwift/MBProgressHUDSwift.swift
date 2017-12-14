@@ -57,14 +57,13 @@ extension MBProgressHUD {
         hideHUD()
     }
     
-    class func show(text: String, icon: String, view: UIView) {
-        
-//        showAdded(to: view, animated: true)
+    private class func show(text: String, icon: String, view: UIView) {
         
         let hud: MBProgressHUD = MBProgressHUD.showAdded(to: view, animated: true)
-        
         hud.label.text = text
+        hud.contentColor = UIColor.white
         hud.customView = UIImageView.init(image: UIImage(named: "MBP_\(icon)"))
+        hud.bezelView.backgroundColor = UIColor.black
         hud.mode = MBProgressHUDMode.customView
         hud.removeFromSuperViewOnHide = true
         hud.hide(animated: true, afterDelay: 1.5)
