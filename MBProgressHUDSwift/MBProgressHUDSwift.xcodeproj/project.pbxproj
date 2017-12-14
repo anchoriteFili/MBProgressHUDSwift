@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BCF56D2BC67FA222EB3EB32F /* libPods-MBProgressHUDSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BCFF3B0D8A6C2836A2E266 /* libPods-MBProgressHUDSwift.a */; };
 		D67EFF4C1FE20EA50020DD77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67EFF4B1FE20EA50020DD77 /* AppDelegate.swift */; };
 		D67EFF4E1FE20EA50020DD77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67EFF4D1FE20EA50020DD77 /* ViewController.swift */; };
 		D67EFF511FE20EA50020DD77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67EFF4F1FE20EA50020DD77 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C379BCC29DD5054EA3C13D4 /* Pods-MBProgressHUDSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBProgressHUDSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MBProgressHUDSwift/Pods-MBProgressHUDSwift.release.xcconfig"; sourceTree = "<group>"; };
+		C6BCFF3B0D8A6C2836A2E266 /* libPods-MBProgressHUDSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MBProgressHUDSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67EFF481FE20EA50020DD77 /* MBProgressHUDSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBProgressHUDSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67EFF4B1FE20EA50020DD77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D67EFF4D1FE20EA50020DD77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		D67EFF671FE20EA60020DD77 /* MBProgressHUDSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBProgressHUDSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67EFF6B1FE20EA60020DD77 /* MBProgressHUDSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProgressHUDSwiftUITests.swift; sourceTree = "<group>"; };
 		D67EFF6D1FE20EA60020DD77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4853A6B126096A2B57B3164 /* Pods-MBProgressHUDSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBProgressHUDSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MBProgressHUDSwift/Pods-MBProgressHUDSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF56D2BC67FA222EB3EB32F /* libPods-MBProgressHUDSwift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FDC12B839A0B8308DE2AA72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6BCFF3B0D8A6C2836A2E266 /* libPods-MBProgressHUDSwift.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D67EFF3F1FE20EA50020DD77 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				D67EFF5F1FE20EA60020DD77 /* MBProgressHUDSwiftTests */,
 				D67EFF6A1FE20EA60020DD77 /* MBProgressHUDSwiftUITests */,
 				D67EFF491FE20EA50020DD77 /* Products */,
+				D77504E7658AE86B93A973DB /* Pods */,
+				3FDC12B839A0B8308DE2AA72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = MBProgressHUDSwiftUITests;
 			sourceTree = "<group>";
 		};
+		D77504E7658AE86B93A973DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4853A6B126096A2B57B3164 /* Pods-MBProgressHUDSwift.debug.xcconfig */,
+				5C379BCC29DD5054EA3C13D4 /* Pods-MBProgressHUDSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D67EFF701FE20EA60020DD77 /* Build configuration list for PBXNativeTarget "MBProgressHUDSwift" */;
 			buildPhases = (
+				9F8A960FAEF605FCA6AA9249 /* [CP] Check Pods Manifest.lock */,
 				D67EFF441FE20EA50020DD77 /* Sources */,
 				D67EFF451FE20EA50020DD77 /* Frameworks */,
 				D67EFF461FE20EA50020DD77 /* Resources */,
+				D9CC0903A061443B90801EF8 /* [CP] Embed Pods Frameworks */,
+				527FD9383AB4BFB89F62A578 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		527FD9383AB4BFB89F62A578 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MBProgressHUDSwift/Pods-MBProgressHUDSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F8A960FAEF605FCA6AA9249 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MBProgressHUDSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9CC0903A061443B90801EF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MBProgressHUDSwift/Pods-MBProgressHUDSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D67EFF441FE20EA50020DD77 /* Sources */ = {
@@ -424,6 +502,7 @@
 		};
 		D67EFF711FE20EA60020DD77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4853A6B126096A2B57B3164 /* Pods-MBProgressHUDSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +518,7 @@
 		};
 		D67EFF721FE20EA60020DD77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C379BCC29DD5054EA3C13D4 /* Pods-MBProgressHUDSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
