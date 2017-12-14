@@ -16,6 +16,9 @@
 		D67EFF611FE20EA60020DD77 /* MBProgressHUDSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67EFF601FE20EA60020DD77 /* MBProgressHUDSwiftTests.swift */; };
 		D67EFF6C1FE20EA60020DD77 /* MBProgressHUDSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67EFF6B1FE20EA60020DD77 /* MBProgressHUDSwiftUITests.swift */; };
 		D6FFFA311FE23E5F00D1CA2E /* MBProgressHUDSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FFFA301FE23E5F00D1CA2E /* MBProgressHUDSwift.swift */; };
+		D6FFFB281FE25BEB00D1CA2E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FFFB241FE25BEB00D1CA2E /* MBProgressHUD.m */; };
+		D6FFFB291FE25BEB00D1CA2E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D6FFFB251FE25BEB00D1CA2E /* LICENSE */; };
+		D6FFFB2A1FE25BEB00D1CA2E /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = D6FFFB271FE25BEB00D1CA2E /* README.mdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		D67EFF6D1FE20EA60020DD77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D67EFF791FE210A60020DD77 /* MBProgressHUDSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUDSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		D6FFFA301FE23E5F00D1CA2E /* MBProgressHUDSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProgressHUDSwift.swift; sourceTree = "<group>"; };
+		D6FFFB241FE25BEB00D1CA2E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		D6FFFB251FE25BEB00D1CA2E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D6FFFB261FE25BEB00D1CA2E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		D6FFFB271FE25BEB00D1CA2E /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
 		F4853A6B126096A2B57B3164 /* Pods-MBProgressHUDSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBProgressHUDSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MBProgressHUDSwift/Pods-MBProgressHUDSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +122,7 @@
 		D67EFF4A1FE20EA50020DD77 /* MBProgressHUDSwift */ = {
 			isa = PBXGroup;
 			children = (
+				D6FFFB231FE25BEB00D1CA2E /* MBProgressHUD */,
 				D67EFF4B1FE20EA50020DD77 /* AppDelegate.swift */,
 				D67EFF4D1FE20EA50020DD77 /* ViewController.swift */,
 				D6FFFA301FE23E5F00D1CA2E /* MBProgressHUDSwift.swift */,
@@ -143,6 +151,17 @@
 				D67EFF6D1FE20EA60020DD77 /* Info.plist */,
 			);
 			path = MBProgressHUDSwiftUITests;
+			sourceTree = "<group>";
+		};
+		D6FFFB231FE25BEB00D1CA2E /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				D6FFFB261FE25BEB00D1CA2E /* MBProgressHUD.h */,
+				D6FFFB241FE25BEB00D1CA2E /* MBProgressHUD.m */,
+				D6FFFB271FE25BEB00D1CA2E /* README.mdown */,
+				D6FFFB251FE25BEB00D1CA2E /* LICENSE */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		D77504E7658AE86B93A973DB /* Pods */ = {
@@ -267,7 +286,9 @@
 			files = (
 				D67EFF561FE20EA50020DD77 /* LaunchScreen.storyboard in Resources */,
 				D67EFF531FE20EA50020DD77 /* Assets.xcassets in Resources */,
+				D6FFFB291FE25BEB00D1CA2E /* LICENSE in Resources */,
 				D67EFF511FE20EA50020DD77 /* Main.storyboard in Resources */,
+				D6FFFB2A1FE25BEB00D1CA2E /* README.mdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +367,7 @@
 				D67EFF4E1FE20EA50020DD77 /* ViewController.swift in Sources */,
 				D67EFF4C1FE20EA50020DD77 /* AppDelegate.swift in Sources */,
 				D6FFFA311FE23E5F00D1CA2E /* MBProgressHUDSwift.swift in Sources */,
+				D6FFFB281FE25BEB00D1CA2E /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
