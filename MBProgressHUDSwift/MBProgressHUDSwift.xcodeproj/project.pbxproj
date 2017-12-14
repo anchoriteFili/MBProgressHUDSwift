@@ -15,6 +15,7 @@
 		D67EFF561FE20EA50020DD77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67EFF541FE20EA50020DD77 /* LaunchScreen.storyboard */; };
 		D67EFF611FE20EA60020DD77 /* MBProgressHUDSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67EFF601FE20EA60020DD77 /* MBProgressHUDSwiftTests.swift */; };
 		D67EFF6C1FE20EA60020DD77 /* MBProgressHUDSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67EFF6B1FE20EA60020DD77 /* MBProgressHUDSwiftUITests.swift */; };
+		D6FFFA311FE23E5F00D1CA2E /* MBProgressHUDSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FFFA301FE23E5F00D1CA2E /* MBProgressHUDSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		D67EFF671FE20EA60020DD77 /* MBProgressHUDSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBProgressHUDSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67EFF6B1FE20EA60020DD77 /* MBProgressHUDSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProgressHUDSwiftUITests.swift; sourceTree = "<group>"; };
 		D67EFF6D1FE20EA60020DD77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D67EFF791FE210A60020DD77 /* MBProgressHUDSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUDSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		D6FFFA301FE23E5F00D1CA2E /* MBProgressHUDSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProgressHUDSwift.swift; sourceTree = "<group>"; };
 		F4853A6B126096A2B57B3164 /* Pods-MBProgressHUDSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBProgressHUDSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MBProgressHUDSwift/Pods-MBProgressHUDSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,10 +117,12 @@
 			children = (
 				D67EFF4B1FE20EA50020DD77 /* AppDelegate.swift */,
 				D67EFF4D1FE20EA50020DD77 /* ViewController.swift */,
+				D6FFFA301FE23E5F00D1CA2E /* MBProgressHUDSwift.swift */,
 				D67EFF4F1FE20EA50020DD77 /* Main.storyboard */,
 				D67EFF521FE20EA50020DD77 /* Assets.xcassets */,
 				D67EFF541FE20EA50020DD77 /* LaunchScreen.storyboard */,
 				D67EFF571FE20EA50020DD77 /* Info.plist */,
+				D67EFF791FE210A60020DD77 /* MBProgressHUDSwift-Bridging-Header.h */,
 			);
 			path = MBProgressHUDSwift;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				TargetAttributes = {
 					D67EFF471FE20EA50020DD77 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					D67EFF5B1FE20EA60020DD77 = {
@@ -339,6 +345,7 @@
 			files = (
 				D67EFF4E1FE20EA50020DD77 /* ViewController.swift in Sources */,
 				D67EFF4C1FE20EA50020DD77 /* AppDelegate.swift in Sources */,
+				D6FFFA311FE23E5F00D1CA2E /* MBProgressHUDSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,12 +512,15 @@
 			baseConfigurationReference = F4853A6B126096A2B57B3164 /* Pods-MBProgressHUDSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM2EX5ALF4;
 				INFOPLIST_FILE = MBProgressHUDSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohongya.MBProgressHUDSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MBProgressHUDSwift/MBProgressHUDSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -521,12 +531,14 @@
 			baseConfigurationReference = 5C379BCC29DD5054EA3C13D4 /* Pods-MBProgressHUDSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GM2EX5ALF4;
 				INFOPLIST_FILE = MBProgressHUDSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhaohongya.MBProgressHUDSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MBProgressHUDSwift/MBProgressHUDSwift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
