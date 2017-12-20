@@ -12,10 +12,10 @@
 		D6E587B71FEA05A40060DC91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E587B51FEA05A40060DC91 /* LaunchScreen.storyboard */; };
 		D6E587C21FEA05A40060DC91 /* MBProgressHUDDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E587C11FEA05A40060DC91 /* MBProgressHUDDemoTests.swift */; };
 		D6E587CD1FEA05A40060DC91 /* MBProgressHUDDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E587CC1FEA05A40060DC91 /* MBProgressHUDDemoUITests.swift */; };
-		D6E587E21FEA061C0060DC91 /* MBProgressHUDSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E587DF1FEA061C0060DC91 /* MBProgressHUDSwift.swift */; };
 		D6E587E31FEA061C0060DC91 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E587E01FEA061C0060DC91 /* MBProgressHUD.m */; };
 		D6E587EA1FEA07DA0060DC91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E587E91FEA07D90060DC91 /* ViewController.swift */; };
 		D6E587ED1FEA07E40060DC91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E587EB1FEA07E40060DC91 /* Main.storyboard */; };
+		D6E587EF1FEA166E0060DC91 /* MBProgressHUDSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E587EE1FEA166D0060DC91 /* MBProgressHUDSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +48,11 @@
 		D6E587CC1FEA05A40060DC91 /* MBProgressHUDDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProgressHUDDemoUITests.swift; sourceTree = "<group>"; };
 		D6E587CE1FEA05A40060DC91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6E587DA1FEA05EF0060DC91 /* MBProgressHUDDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUDDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		D6E587DF1FEA061C0060DC91 /* MBProgressHUDSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUDSwift.swift; sourceTree = "<group>"; };
 		D6E587E01FEA061C0060DC91 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		D6E587E11FEA061C0060DC91 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		D6E587E91FEA07D90060DC91 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6E587EC1FEA07E40060DC91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6E587EE1FEA166D0060DC91 /* MBProgressHUDSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUDSwift.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +136,7 @@
 		D6E587DE1FEA061C0060DC91 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				D6E587DF1FEA061C0060DC91 /* MBProgressHUDSwift.swift */,
+				D6E587EE1FEA166D0060DC91 /* MBProgressHUDSwift.swift */,
 				D6E587E01FEA061C0060DC91 /* MBProgressHUD.m */,
 				D6E587E11FEA061C0060DC91 /* MBProgressHUD.h */,
 			);
@@ -279,8 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E587EF1FEA166E0060DC91 /* MBProgressHUDSwift.swift in Sources */,
 				D6E587AD1FEA05A40060DC91 /* AppDelegate.swift in Sources */,
-				D6E587E21FEA061C0060DC91 /* MBProgressHUDSwift.swift in Sources */,
 				D6E587EA1FEA07DA0060DC91 /* ViewController.swift in Sources */,
 				D6E587E31FEA061C0060DC91 /* MBProgressHUD.m in Sources */,
 			);
