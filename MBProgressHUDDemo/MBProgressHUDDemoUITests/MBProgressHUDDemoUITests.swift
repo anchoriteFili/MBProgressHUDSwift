@@ -1,14 +1,14 @@
 //
-//  MBProgressHUDSwiftUITests.swift
-//  MBProgressHUDSwiftUITests
+//  MBProgressHUDDemoUITests.swift
+//  MBProgressHUDDemoUITests
 //
-//  Created by zetafin on 2017/12/14.
+//  Created by zetafin on 2017/12/20.
 //  Copyright © 2017年 赵宏亚. All rights reserved.
 //
 
 import XCTest
 
-class MBProgressHUDSwiftUITests: XCTestCase {
+class MBProgressHUDDemoUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

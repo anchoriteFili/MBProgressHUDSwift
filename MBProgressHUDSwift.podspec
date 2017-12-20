@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+		   MBProgressHUD used by swift, Secondary packaging。
                    DESC
 
   s.homepage     = "https://github.com/anchoriteFili/MBProgressHUDSwift"
@@ -79,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/anchoriteFili/MBProgressHUDSwift", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/anchoriteFili/MBProgressHUDSwift.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
