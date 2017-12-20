@@ -119,6 +119,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (BOOL)hideHUDForView:(UIView *)view animated:(BOOL)animated;
 
+
+
++ (NSUInteger)hideAllHUDsForView:(UIView *)view animated:(BOOL)animated;
+
++ (NSArray *)allHUDsForView:(UIView *)view;
+
 /**
  * Finds the top-most HUD subview that hasn't finished and returns it.
  *
@@ -182,6 +188,11 @@ NS_ASSUME_NONNULL_BEGIN
  * Called after the HUD is hiden.
  */
 @property (copy, nullable) MBProgressHUDCompletionBlock completionBlock;
+
+/**
+ * 旋转的动画的颜色设置
+ */
+@property (strong, nonatomic) UIColor *activityIndicatorColor;
 
 /*
  * Grace period is the time (in seconds) that the invoked method may be run without
@@ -406,9 +417,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MBProgressHUD (Deprecated)
 
-+ (NSArray *)allHUDsForView:(UIView *)view __attribute__((deprecated("Store references when using more than one HUD per view.")));
-+ (NSUInteger)hideAllHUDsForView:(UIView *)view animated:(BOOL)animated __attribute__((deprecated("Store references when using more than one HUD per view.")));
-
 - (id)initWithWindow:(UIWindow *)window __attribute__((deprecated("Use initWithView: instead.")));
 
 - (void)show:(BOOL)animated __attribute__((deprecated("Use showAnimated: instead.")));
@@ -435,7 +443,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic) CGFloat yOffset __attribute__((deprecated("Set offset.y instead.")));
 @property (assign, nonatomic) CGFloat cornerRadius __attribute__((deprecated("Set bezelView.layer.cornerRadius instead.")));
 @property (assign, nonatomic) BOOL dimBackground __attribute__((deprecated("Customize HUD background properties instead.")));
-@property (strong, nonatomic) UIColor *activityIndicatorColor __attribute__((deprecated("Use UIAppearance to customize UIActivityIndicatorView. E.g.: [UIActivityIndicatorView appearanceWhenContainedIn:[MBProgressHUD class], nil].color = [UIColor redColor];")));
 @property (atomic, assign, readonly) CGSize size __attribute__((deprecated("Get the bezelView.frame.size instead.")));
 
 @end

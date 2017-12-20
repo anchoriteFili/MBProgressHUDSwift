@@ -31,12 +31,12 @@ extension MBProgressHUD {
     
     /* 关闭view上动画 */
     class func hideHUDForView(view: UIView) {
-        hide(for: view, animated: true)
+        hideAllHUDs(for: view, animated: true)
     }
     
     /* 关闭window上动画 */
     class func hideHUD() {
-        hide(for: UIApplication.shared.windows.last!, animated: true)
+        hideAllHUDs(for: UIApplication.shared.windows.last!, animated: true)
     }
     
 
